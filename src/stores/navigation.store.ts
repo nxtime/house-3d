@@ -1,4 +1,4 @@
-import { create, persist } from "zustand";
+import { create } from "zustand";
 import {
   checkForPositionsDiff,
   invertCurrentFloor,
@@ -21,6 +21,7 @@ interface NavigationProps {
 interface NavigationState extends NavigationProps {
   changeFloor(): void;
   changeCameraPosition(_cameraPostion: CameraPosition): void;
+  changeCameraRotation(_cameraPostion: CameraPosition): void;
 }
 
 const initialState: NavigationProps = {

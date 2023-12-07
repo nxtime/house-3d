@@ -27,12 +27,12 @@ export const FarmHouse = () => {
         />
         <Wall
           size={[COL_E, COL_H, OUTER_WALL_W]}
-          pos={[-(COL_E / 2 + 3), COL_H / 2, -(OUTER_WALL_W / 2 + COV_GAP)]}
+          pos={[-(COL_E / 2 + 3), COL_H / 2, -(OUTER_WALL_W / 2 + COV_GAP + COL_E)]}
           color="#222"
         />
         <Wall
           size={[COL_E, COL_H, OUTER_WALL_W]}
-          pos={[-(COL_E / 2 + 18), COL_H / 2, -(OUTER_WALL_W / 2 + COV_GAP)]}
+          pos={[-18, COL_H / 2, -(OUTER_WALL_W / 2 + COV_GAP + COL_E)]}
           color="#222222"
         />
       </group>
@@ -49,7 +49,7 @@ export const FarmHouse = () => {
         />
         <Wall
           size={[COL_E, COL_H, INNER_WALL_W]}
-          pos={[-(COL_E / 2 + 3 + OUTER_WALL_G), COL_H / 2, -(INNER_WALL_W / 2+ COV_GAP + OUTER_WALL_G)]}
+          pos={[-(3 + OUTER_WALL_G), COL_H / 2, -(INNER_WALL_W / 2+ COV_GAP + OUTER_WALL_G)]}
           color="#888"
         />
       </group>
@@ -59,7 +59,52 @@ export const FarmHouse = () => {
           pos={[
             -((INNER_WALL_F - 5) / 2 + (18 - INNER_WALL_F)),
             COL_H / 2,
+            -(COV_GAP + OUTER_WALL_G + KITCHEN_W),
+          ]}
+          color="#888"
+        />
+        <Wall
+          size={[INNER_WALL_F - 5, COL_H, COL_E]}
+          pos={[
+            -((INNER_WALL_F - 5) / 2 + (18 - INNER_WALL_F)),
+            COL_H / 2,
+            -(COL_E / 2 + COV_GAP + OUTER_WALL_G + KITCHEN_W + 3),
+          ]}
+          color="#888"
+        />
+        <Wall
+          size={[INNER_WALL_F - 5, COL_H, COL_E]}
+          pos={[
+            -((INNER_WALL_F - 5) / 2 + (18 - INNER_WALL_F)),
+            COL_H / 2,
+            -(COL_E / 2 + COV_GAP + OUTER_WALL_G + KITCHEN_W + 3 * 2),
+          ]}
+          color="#888"
+        />
+        <Wall
+          size={[INNER_WALL_F - 10, COL_H, COL_E]}
+          pos={[
+            -((INNER_WALL_F - 10) / 2 + (18 - 2.5)),
+            COL_H / 2,
             -(COL_E / 2 + COV_GAP + OUTER_WALL_G + KITCHEN_W),
+          ]}
+          color="#888"
+        />
+        <Wall
+          size={[INNER_WALL_F - 10, COL_H, COL_E]}
+          pos={[
+            -((INNER_WALL_F - 10) / 2 + (18 - 2.5)),
+            COL_H / 2,
+            -(COL_E / 2 + COV_GAP + OUTER_WALL_G + KITCHEN_W + 3),
+          ]}
+          color="#888"
+        />
+        <Wall
+          size={[INNER_WALL_F - 10, COL_H, COL_E]}
+          pos={[
+            -((INNER_WALL_F - 10) / 2 + (18 - 2.5)),
+            COL_H / 2,
+            -(COL_E / 2 + COV_GAP + OUTER_WALL_G + KITCHEN_W + 3 * 2),
           ]}
           color="#888"
         />
